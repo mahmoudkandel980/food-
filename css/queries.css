@@ -198,15 +198,34 @@
                 rgba(0, 0, 0, 0.7),
                 rgba(0, 0, 0, 0.8)
             ),
-            url("/img/hero.png");
+            url("/food-/img/hero.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
+    .grid-2-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .step-img-box:nth-child(2) {
+        grid-row: 1;
+    }
+    .step-img-box:nth-child(6) {
+        grid-row: 5;
+    }
+
+    .step-img-box {
+        transform: translateY(3.2rem);
+    }
+
     .diets {
         grid-column: 1/-1;
         justify-self: center;
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
     }
 
     .header-primary {
@@ -274,7 +293,7 @@
                 rgba(0, 0, 0, 0.7),
                 rgba(0, 0, 0, 0.8)
             ),
-            url("/img/eating.jpg");
+            url("/food-/img/eating.jpg");
         background: cover;
         background-position: center;
         background-repeat: no-repeat;
