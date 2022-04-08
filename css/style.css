@@ -681,8 +681,9 @@ footer {
 
 .social-links {
     list-style: none;
+    display: -webkit-flex;
     display: flex;
-    column-gap: 2.4rem;
+    gap: 2.4rem;
 }
 
 .social-icon {
