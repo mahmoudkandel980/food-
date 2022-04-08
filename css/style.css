@@ -682,12 +682,12 @@ footer {
 .social-links {
     list-style: none;
     display: flex;
-    gap: 2.4rem;
+    column-gap: 2.4rem;
 }
 
 .social-icon {
     height: 2.4rem;
-    min-width: 2.4rem;
+    width: 2.4rem;
 }
 .footer-link-icon:link,
 .footer-link-icon:visited {
