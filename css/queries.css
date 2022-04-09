@@ -358,33 +358,50 @@
         row-gap: 4.8rem;
     }
 
+    .contacts p br {
+        display: block;
+    }
+
     /* flex box gap */
 
-    .social-links {
+    .main-nav-list,
+    .meal-attributes,
+    .meal-attribute,
+    .list,
+    .list-item,
+    .social-links,
+    .contacts > div,
+    .contacts,
+    .footer-nav {
         gap: 0;
+    }
+
+    .main-nav-list > li:not(:last-of-type) {
+        margin-bottom: 4.8rem;
+    }
+
+    .meal-attributes > li:not(:last-of-type) {
+        margin-bottom: 2rem;
+    }
+
+    .meal-attribute > span,
+    .list-item span {
+        margin-left: 1.6rem;
+    }
+
+    .list li:not(:last-of-type) {
+        margin-bottom: 1.6rem;
     }
 
     .social-links li {
         margin-right: 2.4rem;
     }
 
-    .contacts p br {
-        display: block;
-    }
-
-    .contacts > div {
-        gap: 0;
-    }
-
     .contacts p,
     .contacts a {
         margin-left: 2.4rem;
     }
-
-    .footer-nav {
-        gap: 0;
-    }
-
+    .contacts > div,
     .footer-nav li:not(:last-of-type) {
         margin-bottom: 2.4rem;
     }
