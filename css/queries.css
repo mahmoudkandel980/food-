@@ -365,6 +365,7 @@
     /* flex box gap */
 
     .main-nav-list,
+    .delivered-meals,
     .meal-attributes,
     .meal-attribute,
     .list,
@@ -384,6 +385,7 @@
         margin-bottom: 2rem;
     }
 
+    .delivered-text,
     .meal-attribute > span,
     .list-item span {
         margin-left: 1.6rem;
