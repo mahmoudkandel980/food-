@@ -359,8 +359,33 @@
     }
 
     /* flex box gap */
+
     .social-links {
         gap: 0;
-        justify-content: space-around;
+    }
+
+    .social-links li {
+        margin-right: 2.4rem;
+    }
+
+    .contacts p br {
+        display: block;
+    }
+
+    .contacts > div {
+        gap: 0;
+    }
+
+    .contacts p,
+    .contacts a {
+        margin-left: 2.4rem;
+    }
+
+    .footer-nav {
+        gap: 0;
+    }
+
+    .footer-nav li:not(:last-of-type) {
+        margin-bottom: 2.4rem;
     }
 }
