@@ -12,7 +12,7 @@ navBtn.addEventListener("click", () => {
 //scrolling smoothy when click at page link
 ancorElements.forEach(element =>
     element.addEventListener('click', (e) => {
-        e.preventDefault();
+        // e.preventDefault();
         const href = element.getAttribute('href')
 
         if (href === "#") {
@@ -20,7 +20,7 @@ ancorElements.forEach(element =>
                 top: 0,
                 behavior: "smooth",
             })
-        } else {
+        } else if (href !== "#" && href.startsWith('#')) {
             const sectionEl = document.querySelector(href)
             sectionEl.scrollIntoView({ behavior: 'smooth' })
             if (header.classList.contains('nav-open')) {
@@ -30,7 +30,6 @@ ancorElements.forEach(element =>
     }));
 
 
-console.log(window.scroll());
 
 
 
