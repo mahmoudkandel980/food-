@@ -1,24 +1,19 @@
-document.getElementById("year-span").innerText =
-    new Date().getFullYear();
+const ancorElements = document.querySelectorAll('a:link'),
+    header = document.querySelector(".header"),
+    navBtn = document.querySelector(".btn-mobile-nav");
 
-let navBtn =
-    document.querySelector(".btn-mobile-nav");
 
-let header = document.querySelector(".header");
-
+//toggle navbar
 navBtn.addEventListener("click", () => {
     header.classList.toggle("nav-open");
 });
 
 
-const ancorElements = document.querySelectorAll('a:link')
-
+//scrolling smoothy when click at page link
 ancorElements.forEach(element =>
     element.addEventListener('click', (e) => {
-
         e.preventDefault();
         const href = element.getAttribute('href')
-
 
         if (href === "#") {
             window.scrollTo({
@@ -28,10 +23,17 @@ ancorElements.forEach(element =>
         } else {
             const sectionEl = document.querySelector(href)
             sectionEl.scrollIntoView({ behavior: 'smooth' })
-
             if (header.classList.contains('nav-open')) {
                 header.classList.remove('nav-open')
             }
         }
     }));
 
+
+console.log(window.scroll());
+
+
+
+//copy Right
+document.getElementById("year-span").innerText =
+    new Date().getFullYear();
